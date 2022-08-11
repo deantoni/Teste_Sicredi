@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.6 on win32)" generated="20220811 15:25:45.779" rpa="false" schemaversion="2">
+<suite id="s1" name="Sicred" source="C:\Sicredi\RobotFramework\Webtest\Sicred.robot">
+<test id="s1-t1" name="Caso de teste 01 - &quot;Adicionar cliente&quot;">
+<kw name="Acessar a página https://www.grocerycrud.com/v1.x/demo/bootstrap_theme" library="Sicred_resources">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220811 15:25:46.725" level="INFO">Opening browser 'chrome' to base url 'https://www.grocerycrud.com/v1.x/demo/bootstrap_theme'.</msg>
+<status status="PASS" starttime="20220811 15:25:46.721" endtime="20220811 15:25:55.912"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220811 15:25:55.913" endtime="20220811 15:25:56.155"/>
+</kw>
+<status status="PASS" starttime="20220811 15:25:46.720" endtime="20220811 15:25:56.156"/>
+</kw>
+<kw name="Mudar o valor da combo Select version para “Bootstrap V4 Theme”" library="Sicred_resources">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="switch-version-select"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220811 15:25:56.161" endtime="20220811 15:25:56.253"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="switch-version-select"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220811 15:25:56.254" level="INFO">Clicking element '//*[@id="switch-version-select"]'.</msg>
+<status status="PASS" starttime="20220811 15:25:56.254" endtime="20220811 15:25:56.401"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="switch-version-select"]/option[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220811 15:25:56.402" level="INFO">Clicking element '//*[@id="switch-version-select"]/option[2]'.</msg>
+<status status="PASS" starttime="20220811 15:25:56.402" endtime="20220811 15:26:04.167"/>
+</kw>
+<status status="PASS" starttime="20220811 15:25:56.159" endtime="20220811 15:26:04.167"/>
+</kw>
+<kw name="Clicar no botão Add Customer" library="Sicred_resources">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>//*[@id="gcrud-search-form"]/div[1]/div[1]/a</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220811 15:26:04.172" endtime="20220811 15:26:04.820"/>
+</kw>
+<kw name="Double Click Element" library="SeleniumLibrary">
+<arg>//*[@id="gcrud-search-form"]/div[1]/div[1]/a</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<msg timestamp="20220811 15:26:04.821" level="INFO">Double clicking element '//*[@id="gcrud-search-form"]/div[1]/div[1]/a'.</msg>
+<status status="PASS" starttime="20220811 15:26:04.820" endtime="20220811 15:26:09.961"/>
+</kw>
+<status status="PASS" starttime="20220811 15:26:04.171" endtime="20220811 15:26:09.962"/>
+</kw>
+<kw name="Preencher os campos do formulário com as seguintes informações: Name" library="Sicred_resources">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>//*[@id="field-customerName"]</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220811 15:26:09.964" endtime="20220811 15:26:10.052"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="field-customerName"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220811 15:26:10.054" level="INFO">Clicking element '//*[@id="field-customerName"]'.</msg>
+<status status="PASS" starttime="20220811 15:26:10.053" endtime="20220811 15:26:10.618"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="field-customerName"]</arg>
+<arg>Teste Sicredi</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220811 15:26:10.619" level="INFO">Typing text 'Teste Sicredi' into text field '//*[@id="field-customerName"]'.</msg>
+<status status="PASS" starttime="20220811 15:26:10.619" endtime="20220811 15:26:11.360"/>
+</kw>
+<status status="PASS" starttime="20220811 15:26:09.963" endtime="20220811 15:26:11.361"/>
+</kw>
+<kw name="Preencher os campos do formulário com as seguintes informações: Last Name" library="Sicred_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="field-contactLastName"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220811 15:26:11.364" level="INFO">Clicking element '//*[@id="field-contactLastName"]'.</msg>
+<status status="PASS" starttime="20220811 15:26:11.363" endtime="20220811 15:26:11.487"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="field-contactLastName"]</arg>
+<arg>Teste</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220811 15:26:11.488" level="INFO">Typing text 'Teste' into text field '//*[@id="field-contactLastName"]'.</msg>
+<status status="PASS" starttime="20220811 15:26:11.488" endtime="20220811 15:26:11.648"/>
+</kw>
+<status status="PASS" starttime="20220811 15:26:11.362" endtime="20220811 15:26:11.648"/>
+</kw>
+<kw name="Preencher os campos do formulário com as seguintes informações: ContactFirstName" library="Sicred_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="field-contactFirstName"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220811 15:26:11.654" level="INFO">Clicking element '//*[@id="field-contactFirstName"]'.</msg>
+<status status="PASS" starttime="20220811 15:26:11.654" endtime="20220811 15:26:11.779"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="field-contactFirstName"]</arg>
+<arg>Andre Luiz de Antoni</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220811 15:26:11.780" level="INFO">Typing text 'Andre Luiz de Antoni' into text field '//*[@id="field-contactFirstName"]'.</msg>
+<status status="PASS" starttime="20220811 15:26:11.779" endtime="20220811 15:26:11.993"/>
+</kw>
+<status status="PASS" starttime="20220811 15:26:11.652" endtime="20220811 15:26:11.993"/>
+</kw>
+<kw name="Preencher os campos do formulário com as seguintes informações: Phone" library="Sicred_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="field-phone"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220811 15:26:11.997" level="INFO">Clicking element '//*[@id="field-phone"]'.</msg>
+<status status="PASS" starttime="20220811 15:26:11.996" endtime="20220811 15:26:12.130"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="field-phone"]</arg>
+<arg>51 9999-9999</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220811 15:26:12.131" level="INFO">Typing text '51 9999-9999' into text field '//*[@id="field-phone"]'.</msg>
+<status status="PASS" starttime="20220811 15:26:12.130" endtime="20220811 15:26:12.442"/>
+</kw>
+<status status="PASS" starttime="20220811 15:26:11.995" endtime="20220811 15:26:12.442"/>
+</kw>
+<kw name="Preencher os campos do formulário com as seguintes informações: AddressLine1" library="Sicred_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="field-addressLine1"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220811 15:26:12.445" level="INFO">Clicking element '//*[@id="field-addressLine1"]'.</msg>
+<status status="PASS" starttime="20220811 15:26:12.445" endtime="20220811 15:26:12.578"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="field-addressLine1"]</arg>
+<arg>AV Assis Brasil, 3970</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220811 15:26:12.677" level="INFO">Typing text 'AV Assis Brasil, 3970' into text field '//*[@id="field-addressLine1"]'.</msg>
+<status status="PASS" starttime="20220811 15:26:12.578" endtime="20220811 15:26:12.902"/>
+</kw>
+<status status="PASS" starttime="20220811 15:26:12.444" endtime="20220811 15:26:12.903"/>
+</kw>
+<kw name="Preencher os campos do formulário com as seguintes informações: AddressLine2" library="Sicred_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="field-addressLine2"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220811 15:26:12.907" level="INFO">Clicking element '//*[@id="field-addressLine2"]'.</msg>
+<status status="PASS" starttime="20220811 15:26:12.907" endtime="20220811 15:26:13.019"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="field-addressLine2"]</arg>
+<arg>Torre D</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220811 15:26:13.021" level="INFO">Typing text 'Torre D' into text field '//*[@id="field-addressLine2"]'.</msg>
+<status status="PASS" starttime="20220811 15:26:13.020" endtime="20220811 15:26:13.162"/>
+</kw>
+<status status="PASS" starttime="20220811 15:26:12.906" endtime="20220811 15:26:13.163"/>
+</kw>
+<kw name="Preencher os campos do formulário com as seguintes informações: City" library="Sicred_resources">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>//*[@id="field-city"]</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220811 15:26:13.168" endtime="20220811 15:26:13.237"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="field-city"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220811 15:26:13.238" level="INFO">Clicking element '//*[@id="field-city"]'.</msg>
+<status status="PASS" starttime="20220811 15:26:13.238" endtime="20220811 15:26:13.369"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="field-city"]</arg>
+<arg>Porto Alegre</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220811 15:26:13.371" level="INFO">Typing text 'Porto Alegre' into text field '//*[@id="field-city"]'.</msg>
+<status status="PASS" starttime="20220811 15:26:13.370" endtime="20220811 15:26:13.541"/>
+</kw>
+<status status="PASS" starttime="20220811 15:26:13.167" endtime="20220811 15:26:13.541"/>
+</kw>
+<kw name="Preencher os campos do formulário com as seguintes informações: State" library="Sicred_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="field-state"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220811 15:26:13.547" level="INFO">Clicking element '//*[@id="field-state"]'.</msg>
+<status status="PASS" starttime="20220811 15:26:13.546" endtime="20220811 15:26:13.659"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="field-state"]</arg>
+<arg>RS</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220811 15:26:13.660" level="INFO">Typing text 'RS' into text field '//*[@id="field-state"]'.</msg>
+<status status="PASS" starttime="20220811 15:26:13.660" endtime="20220811 15:26:13.827"/>
+</kw>
+<status status="PASS" starttime="20220811 15:26:13.545" endtime="20220811 15:26:13.827"/>
+</kw>
+<kw name="Preencher os campos do formulário com as seguintes informações: PostalCode" library="Sicred_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="field-postalCode"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220811 15:26:13.831" level="INFO">Clicking element '//*[@id="field-postalCode"]'.</msg>
+<status status="PASS" starttime="20220811 15:26:13.831" endtime="20220811 15:26:13.961"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="field-postalCode"]</arg>
+<arg>91000-000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220811 15:26:13.962" level="INFO">Typing text '91000-000' into text field '//*[@id="field-postalCode"]'.</msg>
+<status status="PASS" starttime="20220811 15:26:13.961" endtime="20220811 15:26:14.158"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//*[@id="form-button-save"]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220811 15:26:14.159" endtime="20220811 15:26:14.489"/>
+</kw>
+<status status="PASS" starttime="20220811 15:26:13.830" endtime="20220811 15:26:14.490"/>
+</kw>
+<kw name="Preencher os campos do formulário com as seguintes informações: Country" library="Sicred_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="field-country"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220811 15:26:14.492" level="INFO">Clicking element '//*[@id="field-country"]'.</msg>
+<status status="PASS" starttime="20220811 15:26:14.491" endtime="20220811 15:26:14.631"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="field-country"]</arg>
+<arg>Brasil</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220811 15:26:14.632" level="INFO">Typing text 'Brasil' into text field '//*[@id="field-country"]'.</msg>
+<status status="PASS" starttime="20220811 15:26:14.631" endtime="20220811 15:26:15.030"/>
+</kw>
+<status status="PASS" starttime="20220811 15:26:14.490" endtime="20220811 15:26:15.031"/>
+</kw>
+<kw name="Preencher os campos do formulário com as seguintes informações: from Employeer" library="Sicred_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="field_salesRepEmployeeNumber_chosen"]/a/div/b</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220811 15:26:15.054" level="INFO">Clicking element '//*[@id="field_salesRepEmployeeNumber_chosen"]/a/div/b'.</msg>
+<status status="PASS" starttime="20220811 15:26:15.054" endtime="20220811 15:26:15.379"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="field_salesRepEmployeeNumber_chosen"]/a/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220811 15:26:15.380" level="INFO">Clicking element '//*[@id="field_salesRepEmployeeNumber_chosen"]/a/span'.</msg>
+<status status="PASS" starttime="20220811 15:26:15.379" endtime="20220811 15:26:15.548"/>
+</kw>
+<status status="PASS" starttime="20220811 15:26:15.053" endtime="20220811 15:26:15.549"/>
+</kw>
+<kw name="Preencher os campos do formulário com as seguintes informações: CreditLimit" library="Sicred_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="field-creditLimit"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220811 15:26:15.553" level="INFO">Clicking element '//*[@id="field-creditLimit"]'.</msg>
+<status status="PASS" starttime="20220811 15:26:15.552" endtime="20220811 15:26:15.714"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="field-creditLimit"]</arg>
+<arg>200</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220811 15:26:15.716" level="INFO">Typing text '200' into text field '//*[@id="field-creditLimit"]'.</msg>
+<status status="PASS" starttime="20220811 15:26:15.716" endtime="20220811 15:26:15.882"/>
+</kw>
+<status status="PASS" starttime="20220811 15:26:15.551" endtime="20220811 15:26:15.883"/>
+</kw>
+<kw name="Clicar no botão Save" library="Sicred_resources">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="form-button-save"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220811 15:26:15.888" level="INFO">Clicking button '//*[@id="form-button-save"]'.</msg>
+<status status="PASS" starttime="20220811 15:26:15.888" endtime="20220811 15:26:16.133"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//*[@id="cancel-button"]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220811 15:26:16.252" endtime="20220811 15:26:16.568"/>
+</kw>
+<status status="PASS" starttime="20220811 15:26:15.887" endtime="20220811 15:26:16.568"/>
+</kw>
+<kw name="Validar a mensagem “Your data has been successfully stored into the database. Edit Customer or Go back to list” através de uma asserção" library="Sicred_resources">
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220811 15:26:21.587" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220811 15:26:16.570" endtime="20220811 15:26:21.588"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>//*[@id="report-success"]</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220811 15:26:21.588" endtime="20220811 15:26:21.673"/>
+</kw>
+<status status="PASS" starttime="20220811 15:26:16.569" endtime="20220811 15:26:21.673"/>
+</kw>
+<kw name="Fechar o browser" library="Sicred_resources">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//*[@id="cancel-button"]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220811 15:26:21.677" endtime="20220811 15:26:21.983"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="save-and-go-back-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220811 15:26:21.984" level="INFO">Clicking element '//*[@id="save-and-go-back-button"]'.</msg>
+<status status="PASS" starttime="20220811 15:26:21.984" endtime="20220811 15:26:22.128"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>//*[@id="gcrud-search-form"]/div[2]/table/thead/tr[1]/th[1]</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220811 15:26:22.129" endtime="20220811 15:26:24.739"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220811 15:26:29.749" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220811 15:26:24.740" endtime="20220811 15:26:29.749"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220811 15:26:29.749" endtime="20220811 15:26:34.479"/>
+</kw>
+<status status="PASS" starttime="20220811 15:26:21.676" endtime="20220811 15:26:34.479"/>
+</kw>
+<status status="PASS" starttime="20220811 15:25:46.718" endtime="20220811 15:26:34.480"/>
+</test>
+<doc>Suite Sicred Test</doc>
+<status status="PASS" starttime="20220811 15:25:45.782" endtime="20220811 15:26:34.482"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Sicred">Sicred</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
